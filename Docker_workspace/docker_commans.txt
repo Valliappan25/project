@@ -1,0 +1,20 @@
+sudo docker images --> list all the image in local
+sudo docker ps -a --> list all the containers
+sudo docker stop <containerid/name> --> stops the container
+sudo docker system prune -a --> remove all the stopped container and unused image
+sudo docker system prune -f --> remove all the stopped container
+sudo docker pull <image name> --> pull docker image to local
+sudo docker run <image name> --> runs docker images
+sudo docker run -d <image name> --> run image name in background
+sudo docker run -it <image name> --> run the image in interactive mode
+sudo docker run -v (hostpath):(containerpath) <image name> --> volume mapping
+sudo docker network create <name> --> create netwrk in docker
+sudo docker run --network = --(name of host) host --> run images in network
+sudo docker run -p (hostport):(container port) <image name> --> Expose port of image
+sudo docker build -t=(docker_id/image name) --> bulid new images to docker.
+--name --> change name of docker image
+--entrypoint --> command to be executed once container in created.
+sudo docker run -e (Variable=value) <image name> --> passing value to entrypoint
+sudo docker login --> login in to docker repo
+sudo docker push <image name> --> push our image to docker repo
+sudo docker logs <container id/name> --> get output of container
